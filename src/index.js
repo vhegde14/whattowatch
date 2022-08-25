@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SearchPage from './components/SearchPage';
+import ResultsPage from './components/results/ResultsPage'
+import MovieCard from './components/card/MovieCard'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SearchPage />} />
+        <Route path="/results" element={<ResultsPage />} />
+        <Route path="/moviecard" element={<MovieCard />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: #282c34;
+}
+
+.search {
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -250px;
+    padding: 10px;
+}
+
+.title {
+    display: inline-block;
+    font-size: 60px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#title-what {
+    color: red;
+}
+
+#title-to {
+    color: white;
+}
+
+#title-watch {
+    color: red;
+}
+
+.search-bar {
+    width: 75%;
+    height: 100%;
+    font-size: 20px;
+    border-width: 5px;
+    border-radius: 40px;
+    border-color: white;
+    background-color: #282c34;
+    color: white;
+    padding: 2%;
+}
